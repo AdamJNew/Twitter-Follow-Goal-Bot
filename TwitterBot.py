@@ -21,10 +21,11 @@ FollowCount = user.followers_count
 goal = 20000
 
 # While Loop to Reach Goal and Update Status
-while FollowCount <= goal:
-    if FollowCount == goal:
-        api.update_status("I got to " + str(goal) + " Followers!")
+while followCount <= goal * 2:
+    if followCount >= goal:
+        api.update_status("I got to " + str(followCount) + " Followers!")
         break
     else:
-        print(FollowCount)
+        print(followCount)
         time.sleep(100)
+
