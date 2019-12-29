@@ -14,7 +14,7 @@ auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth)
 
 # Get UserID & FollowerCount
-user = api.get_user(Twitter USER NUMBER ID)
+user = api.get_user(TWITTER USER NUMBER ID)
 FollowCount = user.followers_count
 
 # Set Follower Goal
